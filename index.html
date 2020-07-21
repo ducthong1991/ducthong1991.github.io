@@ -25,22 +25,10 @@
 <audio id="myaudio" autoplay loop>
   <source src="bd.m4a" type="audio/mp3">
 </audio>
-<!--<div class="wrapper">-->
-  <!--<div class="neon-wrapper">-->
-    <!--<span class="txt txt-1" >Happy birthday</span>-->
-    <!--<span class="gradient"></span>-->
-    <!--<span class="dodge"></span>-->
-  <!--</div>-->
-<!--</div>-->
-<!--<div class="wrapper">-->
-  <!--<div class="neon-wrapper">-->
-    <!--<span class="txt txt-2" >Ray</span>-->
-    <!--<span class="gradient"></span>-->
-    <!--<span class="dodge"></span>-->
-  <!--</div>-->
-<!--</div>-->
+
+<p class="introduction">Click to the card</p>
 <div class="container">
-  <div class="card">
+  <div class="card" id="card">
     <div class="imgBox">
       <img class="img" src="ray.jpg">
     </div>
@@ -54,8 +42,18 @@
 <script>
 	document.addEventListener('click', musicPlay);
 	function musicPlay() {
-		document.getElementById('myaudio').play();
+		//document.getElementById('myaudio').play();
 		document.removeEventListener('click', musicPlay);
+	}
+
+	document.getElementById("card").addEventListener("click", openCard);
+	function openCard() {
+		var card = document.getElementById("card");
+		if (card.classList.contains("card-transfer")) {
+			card.classList.remove("card-transfer");
+    } else {
+			card.classList.add("card-transfer");
+		}
 	}
 </script>
 </body>

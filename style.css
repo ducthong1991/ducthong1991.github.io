@@ -116,65 +116,7 @@ body
 	text-align: center;
 }
 
-.wrapper {
-	maring-top: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background: #000000;
-	padding-top: 50px;
-}
-.txt {
-	color: #ffffff;
-	background:#000000;
-	font-size:100px;
-	font-weight: bold;
-	font-family: Arial;
-	text-transform: uppercase;
-}
-.txt::before {
-	position: absolute;
-	mix-blend-mode: difference;
-	filter: blur(3px);
-}
-.neon-wrapper {
-	display:inline-flex;
-	filter: brightness(200%);
-	overflow: hidden;
-}
-.gradient{
-	background: linear-gradient(114.5793141156962deg, rgba(168, 50, 70,1) 4.927083333333334%,rgba(255, 255, 255,1) 97.84374999999999%);
-	position: absolute;
-	top: 0;
-	left:0;
-	width: 100%;
-	height:100%;
-	mix-blend-mode: multiply;
-}
-.dodge {
-	background: radial-gradient(circle,white,black 35%) center / 25% 25%;
-	position: absolute;
-	top:-100%;
-	left:-100%;
-	right:0;
-	bottom:0;
-	mix-blend-mode: color-dodge;
-	animation: dodge-area 3s linear infinite;
-}
-@keyframes dodge-area {
-	to {
-		transform: translate(50%,50%);
-	}
-}
-.txt-1::before {
-	content: 'Happy birthday';
-}
-.txt-2::before {
-	content: 'Ray';
-}
-
 .container {
-	margin-top: 100px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -192,7 +134,7 @@ body
 	box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
 }
 
-.card:hover
+.card-transfer
 {
 	transform: perspective(2000px) rotate(-10deg);
 	box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5);
@@ -209,7 +151,7 @@ body
 	transition: 1s;
 }
 
-.card:hover .imgBox
+.card-transfer .imgBox
 {
 	transform: rotateY(-135deg);
 }
@@ -234,4 +176,12 @@ body
 
 .card .details p {
 	font-size: 40px;
+}
+
+.introduction {
+	margin-top: 100px;
+	font-family: 'Satisfy', cursive;
+	font-size:35px;
+	color: white;
+	text-align: center;
 }
