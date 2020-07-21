@@ -6,21 +6,34 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
+<div class="lights-section">
+  <div class="center">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<audio id="myaudio" autoplay loop>
+  <source src="bd.mp3" type="audio/mp3">
+</audio>
 
+<!--<div style="color: #ffffff;">-->
+  <!--HAPPY BIRTHDAY RAYMOND-->
+<!--</div>-->
+<script>
+	document.addEventListener('click', musicPlay);
+	function musicPlay() {
+		document.getElementById('myaudio').play();
+		document.removeEventListener('click', musicPlay);
+	}
+</script>
 </body>
 </html>

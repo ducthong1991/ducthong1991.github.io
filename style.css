@@ -5,16 +5,16 @@ body
 	background: #000;
 }
 
-ul {
-	position: absolute;
+.lights-section {
 	width: 100%;
 	margin: 20px 0 0;
 	padding: 0;
 	border-top: 2px solid #777;
-	display: flex;
+
 }
 
-ul li {
+.lights-section span {
+	display: inline-block;
 	position: relative;
 	width: 24px;
 	height: 40px;
@@ -26,7 +26,7 @@ ul li {
 	background: rgba(255, 255, 255, .1);
 }
 
-ul li:before {
+.lights-section span:before {
 	content: '';
 	position: absolute;
 	top: -7px;
@@ -36,7 +36,7 @@ ul li:before {
 	background: #444;
 }
 
-ul li:after
+.lights-section span:after
 {
 	content: '';
 	position: absolute;
@@ -48,12 +48,12 @@ ul li:after
 	border-radius: 50%;
 }
 
-ul li:last-child:after
+.lights-section span:last-child:after
 {
 	border-bottom: none;
 }
 
-ul li:nth-child(3n+1) {
+.lights-section span:nth-child(3n+1) {
 	background: rgba(255, 255, 0, 1);
 	animation: animate1 1.5s linear infinite;
 }
@@ -72,7 +72,7 @@ ul li:nth-child(3n+1) {
 	
 }
 
-ul li:nth-child(3n+2) {
+.lights-section span:nth-child(3n+2) {
 	background: rgba(255, 0, 255, 1);
 	animation: animate2 1.5s linear infinite;
 	animation-delay: 0.5s;
@@ -92,7 +92,7 @@ ul li:nth-child(3n+2) {
 
 }
 
-ul li:nth-child(3n+3) {
+.lights-section span:nth-child(3n+3) {
 	background: rgba(50, 255, 0, 1);
 	animation: animate3 1.5s linear infinite;
 	animation-delay: 1s;
@@ -110,4 +110,8 @@ ul li:nth-child(3n+3) {
 		background: rgba(50, 255, 0, .2);
 	}
 
+}
+
+.center {
+	text-align: center;
 }
