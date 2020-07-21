@@ -171,17 +171,17 @@ body
 }
 
 .card .details h2 {
-	font-size: 40px;
+	font-size: 45px;
 }
 
 .card .details p {
-	font-size: 40px;
+	font-size: 45px;
 }
 
 .introduction {
 	margin-top: 100px;
 	font-family: 'Satisfy', cursive;
-	font-size:35px;
+	font-size:40px;
 	color: white;
 	text-align: center;
 }
