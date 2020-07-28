@@ -179,7 +179,8 @@ body
 }
 
 .introduction {
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-bottom: 0px;
 	font-family: 'Satisfy', cursive;
 	font-size:40px;
 	color: white;
@@ -188,11 +189,11 @@ body
 
 .carousel {
 	position: relative;;
-	height: 600px;
+	height: 800px;
 	perspective: 1500px;
-	margin-top: -80px;
+	margin-top: -220px;
 }
 
 .carousel .carousel-item {
-	width: 300px;
+	width: 400px;
 }
