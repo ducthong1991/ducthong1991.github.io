@@ -166,7 +166,7 @@ body
 	top: 0;
 	left: 0;
 	box-sizing: border-box;
-	padding: 30px;
+	padding: 20px;
 	font-family: 'Satisfy', cursive;
 }
 
@@ -184,4 +184,15 @@ body
 	font-size:40px;
 	color: white;
 	text-align: center;
+}
+
+.carousel {
+	position: relative;;
+	height: 600px;
+	perspective: 1500px;
+	margin-top: -80px;
+}
+
+.carousel .carousel-item {
+	width: 300px;
 }
